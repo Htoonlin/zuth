@@ -25,12 +25,12 @@ const ProfileMenuControl = () => {
   };
   const handleMenuItemClick = (item: string) => {
     setAnchorElUser(null);
-    if (item == "Logout") {
+    if (item === "Logout") {
       navigate("/login");
-    } else if (item == "Profile") {
+    } else if (item === "Profile") {
       setGlobalText("UserProfile");
       navigate("/user-profile");
-    } else if (item == "Change Password") {
+    } else if (item === "Change Password") {
       navigate("/change-password");
     }
   };

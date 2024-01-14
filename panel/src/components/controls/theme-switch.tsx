@@ -1,4 +1,4 @@
-import { ChangeEvent, ReactNode, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { useTheme } from "../../contexts/theme-context";

@@ -47,6 +47,7 @@ const ChangePassword = () => {
               label="Password"
               type="password"
               value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <Button
               fullWidth

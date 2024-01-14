@@ -24,11 +24,11 @@ const LocalizeMenuControl = () => {
   };
   const handleMenuItemClick = (item: string) => {
     setAnchorElUser(null);
-    if (item == "English") {
+    if (item === "English") {
       i18n.changeLanguage("en");
-    } else if (item == "Myanmar") {
+    } else if (item === "Myanmar") {
       i18n.changeLanguage("my");
-    } else if (item == "French") {
+    } else if (item === "French") {
       i18n.changeLanguage("fr");
     }
   };

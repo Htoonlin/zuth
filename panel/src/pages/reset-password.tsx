@@ -46,6 +46,7 @@ const ResetPassword = () => {
               label="Password"
               type="password"
               value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <TextField
               margin="normal"
@@ -56,6 +57,7 @@ const ResetPassword = () => {
               label="Confirm Password"
               type="password"
               value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
             />
             <Button
               fullWidth
