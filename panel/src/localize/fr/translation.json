@@ -1,0 +1,9 @@
+{
+  "Dashboard": "FR-Dashboard",
+  "Chart": "FR-Chart",
+  "Deposit": "FR-Deposit",
+  "Orders": "FR-Orders",
+  "Today": "FR-Today",
+  "Recent Orders": "FR-Recent Orders",
+  "Recent Deposits": "FR-Deposits"
+}

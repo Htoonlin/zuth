@@ -1,21 +1,17 @@
-import {
-  Box,
-  Button,
-  Container,
-  CssBaseline,
-  Grid,
-  TextField,
-  Typography,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const LogIn = () => {
+const ForgotPassword = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const handleLogin = () => {
-    navigate("/");
+    navigate("/login");
   };
   return (
     <>
@@ -38,7 +34,8 @@ const LogIn = () => {
             },
           }}
         >
-          <Typography variant="h4">Log In</Typography>
+          <Typography variant="h5">Forgot Password !</Typography>
+          <label>Please enter your email to reset password.</label>
           <Box sx={{ mt: 1 }}>
             <TextField
               margin="normal"
@@ -51,36 +48,18 @@ const LogIn = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="password"
-              name="password"
-              label="Password"
-              type="password"
-              value={password}
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
-            />
             <Button
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
               onClick={handleLogin}
             >
-              LogIn
+              Send
             </Button>
-            <Grid container justifyContent={"flex-end"}>
-              <Grid item>
-                <Link to="/register">Don't have an account? Register</Link>
-              </Grid>
-            </Grid>
           </Box>
         </Box>
       </Container>
     </>
   );
 };
-export default LogIn;
+export default ForgotPassword;

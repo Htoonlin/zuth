@@ -10,12 +10,13 @@ const Footer =(props:FooterPropso)=>{
      return(
         <Box sx={props.sx} >
             <Typography variant="body2" color="text.secondary" align="center">
-            {'Copyright © '}
+                 Made by <b>Zuth - {new Date().getFullYear()}</b>
+            {/* {'Copyright © '}
             <Link color="inherit" href="#">
             Your Website
             </Link>{' '}
             {new Date().getFullYear()}
-            {'.'}
+            {'.'} */}
             </Typography>
         </Box>
        

@@ -1,21 +1,18 @@
-import {
-  Box,
-  Button,
-  Container,
-  CssBaseline,
-  Grid,
-  TextField,
-  Typography,
-} from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const LogIn = () => {
-  const [email, setEmail] = useState("");
+const ResetPassword = () => {
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
   const handleLogin = () => {
-    navigate("/");
+    navigate("/login");
   };
   return (
     <>
@@ -38,19 +35,8 @@ const LogIn = () => {
             },
           }}
         >
-          <Typography variant="h4">Log In</Typography>
+          <Typography variant="h4">Change Password !</Typography>
           <Box sx={{ mt: 1 }}>
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoFocus
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
             <TextField
               margin="normal"
               required
@@ -60,9 +46,16 @@ const LogIn = () => {
               label="Password"
               type="password"
               value={password}
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
+            />
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="password"
+              name="password"
+              label="Confirm Password"
+              type="password"
+              value={confirmPassword}
             />
             <Button
               fullWidth
@@ -70,17 +63,12 @@ const LogIn = () => {
               sx={{ mt: 3, mb: 2 }}
               onClick={handleLogin}
             >
-              LogIn
+              Chnage Password
             </Button>
-            <Grid container justifyContent={"flex-end"}>
-              <Grid item>
-                <Link to="/register">Don't have an account? Register</Link>
-              </Grid>
-            </Grid>
           </Box>
         </Box>
       </Container>
     </>
   );
 };
-export default LogIn;
+export default ResetPassword;
