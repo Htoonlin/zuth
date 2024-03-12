@@ -1,0 +1,35 @@
+ORM (Security, Performance) (SQLAlchemy)
+====================================
+ObjectManagement (Code First)
+= SelectAll/GetAll/LoadAll
+= SelectByID
+= Insert
+= Update
+= SoftDelete
+= HardDelete
+= Dynamic Query (WHERE)
+= Relationship (n+1 problems) => 1 to M => M to 1 => M to M
+	=> Eager
+	=> Lazy
+
+https://www.sqlalchemy.org/
+
+ORM Log
+=================
+Query Log
+Exception Log
+Audit Log
+
+Translate Field Value
+=========================
+
+
+Default Fields (Every Table Object)
+============================
+ID
+CreatedAt, 	=> Insert
+ModifiedAt,
+CreatedBy, 	=> Insert
+ModifiedBy,
+DeletedAt 	=> Insert Null
+

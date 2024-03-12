@@ -1,0 +1,12 @@
+(MultiLanguage)I18N
+======================
+Store => txt, db, json => code: value => greeting: "Hello {0}, ...", greeting: "..."
+Read => 
+
+Invalid_Field : "This field: {0} is invalid"
+
+String.format(Invalid_Field, "username")
+
+Transate en = new Translate(lang_code);
+
+en.translate("greeting", "User")

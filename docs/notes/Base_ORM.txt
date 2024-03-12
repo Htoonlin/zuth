@@ -1,0 +1,32 @@
+orm
+	- model
+		BaseModel (default fields)
+			- created_at
+			- modified_at
+			- created_by
+			- modified_by
+			- deleted_at
+			- id
+			- version
+			- name?
+			- description?
+		HistoryModel
+			- object
+			- objectId
+			- version
+			- action (Insert, update, delete)
+			- comment
+	- db
+		- insert (user create, userHistory create)
+		- update (user update, userHistory create)
+		- softDelete (user update, userHistory create)
+		- remove (user delete, userHistory create)
+	- exception
+			
+
+	user_model(orm.model.BaseModel) => (user, userHistory)
+		- first_name
+		- last_name
+
+user_1 => v1 user
+user_2 => v1 user

@@ -1,0 +1,46 @@
+Folder Structure : Client => controller + request/response + model (before/after middleware) => service (model) => dataaccess + dto.model 
+	- app
+		- controller (API Handling)
+			- AuthController
+		- service (Logic)
+			- AuthService
+			- UserService
+		- core
+			- __init__.py
+			- translation
+			- logging
+			- orm
+				- access
+				- model
+					- base_model.py
+					- audit_model.py
+					- ...
+			- ...
+		- dto
+			- __init__.py
+			- model
+				__init__.py
+			- request
+				__init__.py
+			- response
+				__init__.py
+		- middleware
+			- __init__.py
+			- request_response_log.py
+			- ...
+		- dataacces
+		- util
+		- config
+			- *.json
+			- *.xml
+			- *.py
+	- migrations
+	- log
+	- temp
+	- media		
+	- zuth.db
+	- .venv
+	- .gitignore
+	- Dockerfile
+	- requirements.txt
+		

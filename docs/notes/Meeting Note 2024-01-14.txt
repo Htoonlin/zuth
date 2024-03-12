@@ -1,0 +1,67 @@
+Study (Career)
+==========
+- ReactJS (MUI)
+	- Panel
+	- Login Form
+
+- Python Pure (Flask)
+	- ORM => SQLAlchemy, Entity Framework+Linq
+	- E-commerce (API)
+		- Category
+		- Stock
+		- PO
+		
+- RDBMS (PostgreSQL, MySQL)
+- NoSQL (MongoDB, Redis)
+
+Open Authentication V2
+
+User Access Management + OAuth2 Framework
+==================================
+- Auth
+	- Login
+	- Logoff
+	- ForgetPassword
+	- etc …
+- Profile 
+- User Management
+	- CRUD
+- Application Management
+	- Resources Management 
+- Permission Management
+	- Role Management
+	- Resources Management
+	- Application
+	- User
+
+
+Features
+=============
+Authentication (OAuth 2)
+Logging
+Multi-Language (i18n)
+Dynamic Data
+Theme Customization
+Message Customization
+Services Management
+
+Write Performance => Log
+Read Performance => 
+
+ObjectManagement (SQLAlchemy)
+= SelectAll/GetAll/LoadAll
+= SelectByID
+= Dynamic Select (linq)
+= Insert
+= Update
+= SoftDelete
+= HardDelete
+
+
+Logging
+=========
+Access Log => .log
+Error, Warn, Debug =>.log
+SQL Log => .log
+
+Data Revision => 

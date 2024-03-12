@@ -1,0 +1,14 @@
+Logging
+==============
+Client Request/Response Log
+dd-MMM-yyyy HH:mm:ss.sss type class.method [HTTP_METHOD] [CLIENT_IP]  message
+
+24-Feb-2024 17:02:48	[type] [POST]
+
+- Log(messsage, type=[error,info,...], storageType=[txt,json], config={})
+
+- Log.txt.info()
+- Log.json.info()
+
+- Log.info()
+- Log.debug()

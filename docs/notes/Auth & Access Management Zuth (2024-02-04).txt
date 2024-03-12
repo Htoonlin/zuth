@@ -1,0 +1,46 @@
+Auth & Access Management (Singpass) => (SAAS)
+===================================
+- Auth (Web Auth)
+- Application (DBS)
+	- Setting
+- Modules + Features (Tree Structure)
+- Feature Access Permission (API) => Root, Role, Public 
+- Data Access Permission (CRUD) => Owner, Role, Public 
+- Role
+
+(Monolithic)
+DB => Backend (API) =>  
+		=> Panel (Small Access + View)
+		=> Frontend (View) (Auth Web App, Auth Mobile App, Client App)
+
+
+Technology
+================
+	Docker
+
+	Backend (Python, Flask, MySQL)
+		- Dependency Injection (Container)
+			- Startup 
+		- Configuration (Web.Config) .env
+			- Main DB Config (MySQL)
+			- Application DB Directory (Sqlite)
+		- Logging 
+		- Localization (i18n)
+		- Data Export/Import
+		
+		- Storage Management => Google Drive/One Drive (SharePoint) (File Upload/Download With Permission)
+		- Data Access (ORM++) Security/Dynamic/Data Indexing (SqlAlchemy)
+			- Same Schema
+			- Application/DB
+				- MySQL
+				- SQLite (Encrypt/Decrypt)
+			- CRUD
+			- Lazy/Eager Loading
+			- Data Histories (Git) => Save => Commit =>?Rollback (Revision)
+			- Dynamic Query (Linq Query)
+			
+	
+
+	Admin Panel (React)
+
+	Frontend (Mobile, Web)
