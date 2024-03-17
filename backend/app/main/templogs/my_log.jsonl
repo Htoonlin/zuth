@@ -1,0 +1,30 @@
+{
+  "timestamp": "2024-03-17T10:50:08.405827+00:00",
+  "level": "DEBUG",
+  "clientip": "192.168.0.1",
+  "user": "user000001",
+  "module": "main",
+  "function": "main",
+  "line": 23,
+  "thread_name": "MainThread",
+  "message": {
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate",
+      "Host": "httpbin.org",
+      "User-Agent": "python-requests/2.31.0",
+      "X-Amzn-Trace-Id": "Root=1-65f6cae0-431f90066f910b10297b5824"
+    }
+  }
+}
+{
+  "timestamp": "2024-03-17T10:50:08.406826+00:00",
+  "level": "DEBUG",
+  "clientip": "192.168.0.1",
+  "user": "user000001",
+  "module": "main",
+  "function": "main",
+  "line": 25,
+  "thread_name": "MainThread",
+  "message": "debug message"
+}

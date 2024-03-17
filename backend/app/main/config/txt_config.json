@@ -19,7 +19,7 @@
         "class": "logging.handlers.RotatingFileHandler",
         "level": "DEBUG",
         "formatter": "myformat",
-        "filename": "app/main/templogs/my_log.txt",
+        "filename": "backend/app/main/templogs/my_log.txt",
         "maxBytes": 300000000,
         "backupCount": 10
       }
@@ -32,6 +32,5 @@
           "file"
         ]
       }
-    }
-    
+    }    
 }
