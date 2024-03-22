@@ -1,50 +1,48 @@
 {
-    "version": 1,    
-    "disable_existing_loggers": false,
-    "formatters": {     
-      "json": {
-        "()": "logconfig.MyJSONFormatter",
-        "fmt_keys": {
-          "timestamp": "timestamp",
-          "level": "levelname",
-          "clientip": "clientip",
-          "user": "user",
-          "module": "module",
-          "function": "funcName",
-          "line": "lineno",
-          "thread_name": "threadName",   
-          "message":  "message"                         
-        }        
-      }
+  "version": 1,    
+  "disable_existing_loggers": false,
+  "formatters": {     
+    "json": {
+      "format": "{\"timestamp\":\"%(asctime)s\",\"level\":\"%(levelname)s\",\"clientip\":\"%(clientip)s\",\"user\":\"%(user)s\",\"module\":\"%(module)s\",\"function\":\"%(funcName)s\",\"line\":\"%(lineno)d\",\"thread_name\":\"%(threadName)s\",\"message\":%(message)s}",
+      "datefmt": "%Y-%m-%dT%H:%M:%S%z" ,
+      "defaults":{"clientip":"","user":""}        
+    } 
+  },
+  "filters": {
+    "no_errors": {
+      "()": "logconfig.NonErrorFilter"
+    }
+  },
+  "handlers": {     
+    "stdout": {
+      "class": "logging.StreamHandler",
+      "level": "INFO",
+      "formatter": "json",
+      "stream": "ext://sys.stdout"
     },
-    "filters": {
-      "no_errors": {
-        "()": "logconfig.NonErrorFilter"
-      }
+    "stderr": {
+      "class": "logging.StreamHandler",
+      "level": "WARNING",
+      "formatter": "json",
+      "stream": "ext://sys.stderr"
     },
-    "handlers": {
-      "stderr": {
-        "class": "logging.StreamHandler",
-        "level": "WARNING",
-        "formatter": "json",
-        "stream": "ext://sys.stdout"
-      },
-      "file": {
-        "class": "logging.handlers.RotatingFileHandler",
-        "level": "DEBUG",
-        "formatter": "json",
-        "filename": "backend/app/main/templogs/my_log.jsonl",
-        "maxBytes": 300000000,
-        "backupCount": 10
-      }
-    },
-    "loggers": {
-      "root": {
-        "level": "DEBUG",
-        "handlers": [
-          "stderr",
-          "file"
-        ]
-      }
-    }    
+    "file": {
+      "class": "logging.handlers.RotatingFileHandler",
+      "level": "DEBUG",
+      "formatter": "json",
+      "filename": "backend/app/main/templogs/my_log.jsonl",
+      "maxBytes": 300000000,
+      "backupCount": 10
+    }
+  },
+  "loggers": {
+    "root": {
+      "level": "DEBUG",
+      "handlers": [   
+        "stdout",      
+        "stderr",
+        "file"
+      ]
+    }
+  }    
 }

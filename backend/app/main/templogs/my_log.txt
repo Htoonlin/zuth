@@ -1,13 +1,13 @@
-[2024-03-17T18:49:53+0800|DEBUG|||connectionpool|_new_conn|L1055|MainThread] Starting new HTTPS connection (1): httpbin.org:443
-[2024-03-17T18:49:54+0800|DEBUG|||connectionpool|_make_request|L549|MainThread] https://httpbin.org:443 "GET /headers HTTP/1.1" 200 225
-[2024-03-17T18:49:54+0800|DEBUG|192.168.0.1|user000001|main|main|L23|MainThread] {
+[2024-03-22T22:23:36+0800|DEBUG|||connectionpool|_new_conn|1055|MainThread] Starting new HTTPS connection (1): httpbin.org:443
+[2024-03-22T22:23:37+0800|DEBUG|||connectionpool|_make_request|549|MainThread] https://httpbin.org:443 "GET /headers HTTP/1.1" 200 225
+[2024-03-22T22:23:37+0800|DEBUG|192.168.0.1|user000001|main|main|37|MainThread] {
   "headers": {
     "Accept": "*/*", 
     "Accept-Encoding": "gzip, deflate", 
     "Host": "httpbin.org", 
     "User-Agent": "python-requests/2.31.0", 
-    "X-Amzn-Trace-Id": "Root=1-65f6cad2-61f594df60ceec280c70093b"
+    "X-Amzn-Trace-Id": "Root=1-65fd946d-0ac9dc9461efe18571abc40e"
   }
 }
 
-[2024-03-17T18:49:54+0800|DEBUG|192.168.0.1|user000001|main|main|L25|MainThread] debug message
+[2024-03-22T22:23:37+0800|DEBUG|192.168.0.1|user000001|main|main|39|MainThread] debug message
